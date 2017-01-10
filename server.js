@@ -2,7 +2,7 @@ var express = require('express');
 var moment = require('moment');
 var app = express();
 
-app.listen(8080);
+app.listen(process.env.PORT);
 console.log('Server up');
 
 app.get('/', function(req, res){
